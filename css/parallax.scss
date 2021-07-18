@@ -44,32 +44,40 @@ body{
             .parallax_layer{
                 position: absolute;
                 inset: 0;
-                @include align-center;
+                @include align-center;              
             }
-        }
+
+            .base_layer{
+                // scale calculation: 1 + ((Z transform value * -1) / perspective)
+                transform: translateZ(-300px) scale(2.05);
+            }
+
+            .mid_layer{
+                // scale calculation: 1 + ((Z transform value * -1) / perspective)
+                transform: translateZ(0);
+            }
+            .top_layer{
+                // scale calculation: 1 + ((Z transform value * -1) / perspective)
+                transform: translateZ(210px) scale(0.3);
+            }
+        }   
 
         #intro{
-
+            z-index: 0;
         }
 
         #group-1{
-
+            z-index: -1;
         }
 
         #group-1 > .base_layer{
             background-color: crimson;
         }
         
-        #group-2{
-
-        }
 
         #group-2 > .mid_layer{
             background-color: yellowgreen;
         }
 
-        #outro{
-
-        }
     }
 }

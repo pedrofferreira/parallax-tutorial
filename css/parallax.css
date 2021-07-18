@@ -67,6 +67,29 @@ body .parallax_wrapper .parallax_group .parallax_layer {
           align-items: center;
 }
 
+body .parallax_wrapper .parallax_group .base_layer {
+  -webkit-transform: translateZ(-300px) scale(2.05);
+          transform: translateZ(-300px) scale(2.05);
+}
+
+body .parallax_wrapper .parallax_group .mid_layer {
+  -webkit-transform: translateZ(0);
+          transform: translateZ(0);
+}
+
+body .parallax_wrapper .parallax_group .top_layer {
+  -webkit-transform: translateZ(210px) scale(0.3);
+          transform: translateZ(210px) scale(0.3);
+}
+
+body .parallax_wrapper #intro {
+  z-index: 0;
+}
+
+body .parallax_wrapper #group-1 {
+  z-index: -1;
+}
+
 body .parallax_wrapper #group-1 > .base_layer {
   background-color: crimson;
 }
