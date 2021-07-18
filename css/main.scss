@@ -29,7 +29,10 @@ body{
         }
 
         .outro_screen{
-            
+            height:100vh;
+            background-color: teal;
+            @include align-center();
+
         }
     }
 }
