@@ -39,11 +39,12 @@ body .parallax_wrapper .intro_screen p {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  font-family: 'Roboto Slab', serif;
 }
 
 body .parallax_wrapper .outro_screen {
   height: 100vh;
-  background-color: teal;
+  background-color: #ac8b6d;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -102,6 +103,23 @@ body .parallax_wrapper .parallax_group .top_layer {
           transform: translateZ(210px) scale(0.3);
 }
 
+body .parallax_wrapper .parallax_group .top_layer .material_list {
+  font-size: 23pt;
+  text-align: left;
+  color: #ac8b6d;
+  display: block;
+}
+
+body .parallax_wrapper .parallax_group .top_layer li {
+  margin-bottom: 30px;
+}
+
+body .parallax_wrapper .parallax_group .top_layer .list_title {
+  display: block;
+  font-size: 30pt;
+  text-align: left;
+}
+
 body .parallax_wrapper #intro {
   z-index: 0;
 }
@@ -115,6 +133,10 @@ body .parallax_wrapper #group-1 > .base_layer {
 }
 
 body .parallax_wrapper #group-2 > .mid_layer {
-  background-color: yellowgreen;
+  background-color: #234a7d;
+}
+
+body .parallax_wrapper #group-3 {
+  z-index: -1;
 }
 /*# sourceMappingURL=parallax.css.map */
