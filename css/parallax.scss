@@ -39,12 +39,13 @@ body{
                 display: block;
                 color: #234a7d;
                 justify-content: center;
+                font-family: 'Roboto Slab', serif;
             }
         }
 
         .outro_screen{
             height:100vh;
-            background-color: teal;
+            background-color: #ac8b6d;
             @include align-center();
 
         }
@@ -85,6 +86,24 @@ body{
             .top_layer{
                 // scale calculation: 1 + ((Z transform value * -1) / perspective)
                 transform: translateZ(210px) scale(0.3);
+
+                .material_list{
+                    font-size: 23pt;
+                    text-align: left;
+                    color: #ac8b6d;
+                    display: block;
+                    
+                }
+
+                li{
+                    margin-bottom: 30px;
+                }
+
+                .list_title{
+                    display: block;
+                    font-size: 30pt;
+                    text-align: left;
+                }
             }
         }   
 
@@ -102,8 +121,11 @@ body{
         
 
         #group-2 > .mid_layer{
-            background-color: yellowgreen;
+            background-color: #234a7d;
         }
 
+        #group-3{
+            z-index: -1;
+        }
     }
 }
